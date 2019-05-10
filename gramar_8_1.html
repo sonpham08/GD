@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Lean English</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+        /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+	.list_vocabulary{
+		width: 100%;
+	}
+	.list_vocabulary ul{
+		text-align: center;
+		overflow: hidden;
+		list-style-type: none;
+	}
+	.list_vocabulary ul li{
+		float: left;
+	    width: 240px;
+	    margin-left: 20px;
+	    margin-top: 10px; 
+	}
+
+	.learn_vocabulary{
+		width: 100%;
+		padding-left: 100px;
+	}
+	
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 570px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
+</head>
+
+	<body>
+	    <nav class="navbar navbar-inverse navbar-fixed-top">
+	        <div class="container-fluid">
+	            <div class="navbar-header">
+	                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                </button>
+	                <a class="navbar-brand" href="#">Home</a>
+	            </div>
+	            <div class="collapse navbar-collapse" id="myNavbar">
+	                <ul class="nav navbar-nav">
+	                    <li ><a href="./index.html">Vocabulary</a></li>
+	                    <li class="active"> <a href="./gramar.html">Gramar</a></li>
+	                    <li><a href="./test_toeic.html">Test Toeic</a></li>
+	                </ul>
+	                <ul class="nav navbar-nav navbar-right">
+	                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+	                </ul>
+	            </div>
+	        </div>
+	    </nav>
+	    <div class="container-fluid">
+	    	<div style="height: 50px;"></div>
+	        <div class="row content">
+	            <div class="col-sm-12">
+					<div class="row vocabulary">
+						<div class="panel panel-primary" style="width: 80%; margin: auto; margin-top: 20px">
+		                  <div class="panel-heading" align="center"> <label style="font-size: 25px;">1. Cấu trúc chung của 1 câu</label></div>
+		                  <div class="panel-body">
+		                    <div class="row learn_vocabulary">
+		                       <p>Một câu trong tiếng Anh thường bao gồm các thành phần sau:</p>
+		                       <label style="color: red; margin-left: 200px">SUBJECT-VERT-COMPLEMENT-MODIFIER</label><br>
+		                       <label style="font-size: 20px">1.1 Subject (chủ ngữ):</label>
+		                       <p>Chủ ngữ là chủ thể của hành động trong câu, thường đứng trước động từ (verb). Chủ ngữ thường là một danh từ (noun) hoặc một ngữ danh từ (noun phrase - một nhóm từ kết thúc bằng một danh từ, trong trường hợp này ngữ danh từ không được bắt đầu bằng một giới từ). Chủ ngữ thường đứng ở đầu câu và quyết định việc chia động từ.</p>
+		                       <p>Chú ý rằng mọi câu trong tiếng Anh đều có chủ ngữ (Trong câu mệnh lệnh, chủ ngữ được ngầm hiểu là người nghe. Ví dụ: “Don't move!” = Đứng im!).</p>
+		                 
+		                       <p>Milk is delicious. (một danh từ)</p>
+		                       <p>That new, red car is mine. (một ngữ danh từ) </p>
+		                       <p>Đôi khi câu không có chủ ngữ thật sự, trong trường hợp đó, It hoặc There đóng vai trò chủ ngữ giả.</p>
+
+		                       <p>It is a nice day today.</p>
+		                       <p>There is a fire in that building.</p>
+							   <p>There were many students in the room.</p>
+							   
+
+
+							   <label style="font-size: 20px">1.1 Verb (động từ):</label>
+		                       <p>Động từ là từ chỉ hành động hoặc trạng thái của chủ ngữ. Mọi câu đều phải có động từ. Nó có thể là một từ đơn hoặc một ngữ động từ. Ngữ động từ (verb phrase) là một nhóm từ gồm một hoặc nhiều trợ động từ (auxiliary) và một động từ chính.</p>
+		                 
+								<p>I love you. (chỉ hành động)
+									Chilli is hot. (chỉ trạng thái)
+									I have seen the movie three times before. (auxiliary: have; main verb: seen)
+									I am going to Sai Gon tomorrow. (auxiliary: am; main verb: going)</p>
+							   
+
+
+							   <label style="font-size: 20px">1.1 Complement (vị ngữ):</label>
+		                       <p>Vị ngữ là từ hoặc cụm từ chỉ đối tượng tác động của chủ ngữ. Cũng giống như chủ ngữ, vị ngữ thường là danh từ hoặc ngữ danh từ không bắt đầu bằng giới từ, tuy nhiên vị ngữ thường đứng sau động từ. Không phải câu nào cũng có complement. Vị ngữ trả lời cho câu hỏi What? hoặc Whom?</p>
+		                 
+								<p>John bought a car yesterday. (What did John buy?)
+									Jill wants to drink some water. (What does he want to drink?)
+									She saw John at the movie last night. (Whom did she see at the movie?)</p>
+		                    </div>
+		                  </div>
+		                </div>
+					</div>
+<!-- 
+					<div class="row">
+						<div class="container" align="center">
+						  <ul class="pagination">
+						    <li class="active"><a href="./gramar_1_1.html">1</a></li>
+						    <li ><a href="./gramar_2_1.html">2</a></li>
+						    <li><a href="#">3</a></li>
+						   <li><a href="#">4</a></li>
+						   <li><a href="#">5</a></li>
+						   <li><a href="#">6</a></li>
+						   <li><a href="#">7</a></li>
+						   <li><a href="#">8</a></li>
+						  </ul>
+						</div>
+					</div> -->
+
+	              	
+	            </div>
+	            <!-- <div class="col-sm-1 sidenav">
+	                <div class="well">
+	                    <p>ADS</p>
+	                </div>
+	                <div class="well">
+	                    <p>ADS</p>
+	                </div>
+	            </div> -->
+	        </div>
+	    </div>
+	    <footer class="container-fluid text-center">
+	        <p>@Copyright - Nhóm 2</p>
+	    </footer>
+	</body>
+
+</html>

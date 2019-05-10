@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Lean English</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+        /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+	.list_vocabulary{
+		width: 100%;
+	}
+	.list_vocabulary ul{
+		text-align: center;
+		overflow: hidden;
+		list-style-type: none;
+	}
+	.list_vocabulary ul li{
+		float: left;
+	    width: 240px;
+	    margin-left: 20px;
+	    margin-top: 10px; 
+	}
+
+	.learn_vocabulary{
+		width: 100%;
+		padding-left: 100px;
+	}
+	
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 570px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
+</head>
+
+	<body>
+	    <nav class="navbar navbar-inverse navbar-fixed-top">
+	        <div class="container-fluid">
+	            <div class="navbar-header">
+	                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                </button>
+	                <a class="navbar-brand" href="#">Home</a>
+	            </div>
+	            <div class="collapse navbar-collapse" id="myNavbar">
+	                <ul class="nav navbar-nav">
+	                    <li ><a href="./index.html">Vocabulary</a></li>
+	                    <li class="active"> <a href="./gramar.html">Gramar</a></li>
+	                    <li><a href="./test_toeic.html">Test Toeic</a></li>
+	                </ul>
+	                <ul class="nav navbar-nav navbar-right">
+	                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+	                </ul>
+	            </div>
+	        </div>
+	    </nav>
+	    <div class="container-fluid">
+	    	<div style="height: 50px;"></div>
+	        <div class="row content">
+	            <div class="col-sm-12">
+					<div class="row vocabulary">
+						<div class="panel panel-primary" style="width: 80%; margin: auto; margin-top: 20px">
+		                  <div class="panel-heading" align="center"> <label style="font-size: 25px;">1. Cấu trúc chung của 1 câu</label></div>
+		                  <div class="panel-body">
+		                    <div class="row learn_vocabulary">
+		                       <!-- <p>Một câu trong tiếng Anh thường bao gồm các thành phần sau:</p>
+		                       <label style="color: red; margin-left: 200px">SUBJECT-VERT-COMPLEMENT-MODIFIER</label><br> -->
+		                       <label style="font-size: 20px">1. Nếu các chủ ngữ nối nhau bằng “and” và diễn tả cùng một ý chung thì động từ được chia ở số ít.</label>
+		                 
+		                       <p>Example: Bread and butter is my favorite food.</p>
+
+
+							   <label style="font-size: 20px">2. Nếu các chủ ngữ nối với nhau bằng “or”, “nor”, “neither …. nor”, “either …or”, “not only …but also” thì động từ chia theo chủ ngữ gần nhất</label>
+		                 
+							   <p>Example: It is you or I who am to go.
+
+								Neither John nor his friends have seen this movie before.
+								
+								</p>
+							   
+							   <label style="font-size: 20px">3. Các chủ ngữ nối với nhau bẳng “and” nhưng có “every, each, many” thì động từ chia ở số ít.</label>
+		                 
+							   <p>Example: Each boy and each girl has their own story.</p>
+							   
+							   <label style="font-size: 20px">4. Trường hợp đồng chủ ngữ, các danh từ được nối với nhau bởi “as well as”, “no less than”, “together with”, “along with” , “accompanied by” thì động từ chia theo chủ ngữ chính..</label>
+		                 
+							   <p>Example: Mr Robbins, accompanied by his wife and children, is leaving tonight.</p>
+							   
+							   <label style="font-size: 20px">5. None of , Any of có thể dùng cả ở động từ số ít và số nhiều, tùy thuộc vào danh từ sau nó là danh từ đếm được hay không đếm được.</label>
+		                 
+							   <p>Example: None of my friends lives near my house.</p>
+							   
+							   <label style="font-size: 20px">6. One of, Each of, Every of, Either of thì động từ chia ở số ít.</label>
+		                 
+							   <p>Example: One of my family’s members is going to Singapore nest month.</p>
+							   
+							   <label style="font-size: 20px">7. The number + N: Động từ chia số ít (với ý nghĩa là Số lượng những…….)</label>
+		                 
+							   <p>Example: Her glassses are really nice.</p>
+							   
+							   <label style="font-size: 20px">8. Những chủ ngữ là những danh từ bộ phận (glasses, pants, trousers, scissors,…) thì động từ luôn chia số nhiều.</label>
+		                 
+							   <p>Example: Bread and butter is my favorite food.</p>
+							   
+							   <label style="font-size: 20px">9. Những danh từ chỉ quốc tịch thì động từ luôn chia số nhiều.</label>
+		                 
+							   <p>Example: Vietnamese always want to spend their time with family in Tet Holiday</p>
+							   
+							   <label style="font-size: 20px">10. Những chủ ngữ có “s” nhưng ý nghĩa là số ít thì động từ cũng chia số ít.</label>
+		                 
+		                       <p>Example: News, Mathematics, Physics, Economics, Politics, Statistics, Electronics,  Linguistics, Electronics, …</p>
+		                    </div>
+		                  </div>
+		                </div>
+					</div>
+<!-- 
+					<div class="row">
+						<div class="container" align="center">
+						  <ul class="pagination">
+						    <li class="active"><a href="./gramar_1_1.html">1</a></li>
+						    <li ><a href="./gramar_2_1.html">2</a></li>
+						    <li><a href="#">3</a></li>
+						   <li><a href="#">4</a></li>
+						   <li><a href="#">5</a></li>
+						   <li><a href="#">6</a></li>
+						   <li><a href="#">7</a></li>
+						   <li><a href="#">8</a></li>
+						  </ul>
+						</div>
+					</div> -->
+
+	              	
+	            </div>
+	            <!-- <div class="col-sm-1 sidenav">
+	                <div class="well">
+	                    <p>ADS</p>
+	                </div>
+	                <div class="well">
+	                    <p>ADS</p>
+	                </div>
+	            </div> -->
+	        </div>
+	    </div>
+	    <footer class="container-fluid text-center">
+	        <p>@Copyright - Nhóm 2</p>
+	    </footer>
+	</body>
+
+</html>

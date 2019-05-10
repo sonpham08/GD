@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Lean English</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ'
+	 crossorigin='anonymous'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<style>
+		/* Remove the navbar's default margin-bottom and rounded borders */
+		.navbar {
+			margin-bottom: 0;
+			border-radius: 0;
+		}
+
+
+		/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+		.row.content {
+			height: 570px
+		}
+
+		/* Set gray background color and 100% height */
+		.sidenav {
+			padding-top: 20px;
+			background-color: #f1f1f1;
+			height: 100%;
+		}
+
+		.text {
+			font-size: 25px;
+			color: black;
+		}
+
+		.da {
+			margin-left: 0;
+		}
+
+		/* Set black background color, white text and some padding */
+		footer {
+			background-color: #555;
+			color: white;
+			padding: 15px;
+		}
+
+		/* On small screens, set height to 'auto' for sidenav and grid */
+		@media screen and (max-width: 767px) {
+			.sidenav {
+				height: auto;
+				padding: 15px;
+			}
+			.row.content {
+				height: auto;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Home</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li><a href="./index.html">Vocabulary</a></li>
+					<li> <a href="./gramar.html">Gramar</a></li>
+					<li class="active"><a href="./test_toeic.html">Test Toeic</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="container-fluid">
+		<div style="height: 50px;"></div>
+		<div class="row content">
+			<!-- <div class="col-sm-1 sidenav">
+	                <p><a href="#">Link</a></p>
+	                <p><a href="#">Link</a></p>
+	                <p><a href="#">Link</a></p>
+	            </div> -->
+			<div class="col-sm-12">
+
+				<div class="row vocabulary">
+					<div class="panel panel-primary" style="width: 80%; margin: auto; margin-top: 20px">
+						<div class="panel-heading" align="center"> <label style="font-size: 25px;">PART I - Listening: Nghe và chọn</label></div>
+						<div class="panel-body">
+							<div class="row">
+								<!-- <p class="text" style="margin-left: 15px">Câu 1/100</p> -->
+
+								<audio controls style="float: right;margin-top: -50px;">
+									<source src="./MP3/autual1/01-Test1.mp3" type="audio/mpeg">
+								</audio>
+								<div class="col-xs-6">
+									<!-- <img src="./image/congnghe.jpg" class="img-responsive " alt="Image"> -->
+								</div>
+								<div class="col-xs-6">
+									<div id="show1" style="display: block;">
+										<div class="row da">
+											<p>11. Where does this bus go to ?</p>
+											<p>A.  	You need a transit card.</p>
+											<p>B.  	The bus stop over there.</p>
+											<p class="dapan">C.  	It is headed downtown.</p>
+										</div>
+										<div class="row da">
+											<p>12. The elevator has been repaired, right ?</p>
+											<p>A.  	She works on the third floor.</p>
+											<p class="dapan">B.  	Yes, it is working again.</p>
+											<p>C.  	That’s not what i saw.</p>
+										</div>
+
+										<div class="row da">
+											<p class="dapan">13. What was the cost of replacing the window ?</p>
+											<p>A.  	I think it was less than 60 dollars.</p>
+											<p>B.  	In a department store.</p>
+											<p>C.  	It wasn’t difficult at all.</p>
+										</div>
+
+										<div class="row da">
+											<p>14. Will you be checking your e-mail tomorrow ?</p>
+											<p>A.  	Look at the attachment.</p>
+											<p class="dapan">B.  	Actually,  I’ll be on vacation.</p>
+											<p>C.  	We accept cash or check.</p>
+										</div>
+										<div class="row da">
+											<p>15. Have you considered building a fence ?</p>
+											<p>A.  	The house is for sale.</p>
+											<p class="dapan">B.  	Yes, we’re doing that next.</p>
+											<p>C.  	His remarks caused offense.</p>
+
+											<div class="row da">
+												<p>16. Why did subway stop running early tonight ?</p>
+												<p class="dapan">A.  	Because it’s a holiday.</p>
+												<p>B.  	Let’s get off at the next station.</p>
+												<p>C.  	No, I won’t be running tomorrow.</p>
+											</div>
+											<div class="row da">
+												<p>17. How was the museum tour ?</p>
+												<p>A.  	The window faces toward the street.</p>
+												<p>B.  	Between William Street and Keller Avenue.</p>
+												<p class="dapan">C.  	It was very informative.</p>
+											</div>
+	
+											<div class="row da">
+												<p>18. Why weren’t the flyers ready in time for the event ?</p>
+												<p>A.  	They’re not frequent fluers.</p>
+												<p class="dapan">B.  	The copler malfunctioned.</p>
+												<p>C.  	it was the company’s 40th anniversary.</p>
+											</div>
+	
+											<div class="row da">
+												<p>19. Who’s speaking at tonight’s opening ceremory ?</p>
+												<p>A.  	Front row seats.</p>
+												<p>B.  	Mr. Gibson will close the door.</p>
+												<p class="dapan">C.  	A famous novelist.</p>
+											</div>
+											<div class="row da">
+												<p>20. When should i tunr on the air conditioner ?</p>
+												<p class="dapan">A.  	When it reaches 25 degrees..</p>
+												<p>B.  	i agree with you.</p>
+												<p>C.  	They’ll be on air in about an hour.</p>
+										</div>
+									</div>
+
+									<br>
+									<button style="margin-left: 40%;" type="button" onclick="myFunction()" class="btn btn-success">Đáp Án</button>
+
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+				<ul class="pager">
+					<li><a href="">Previous</a></li>
+					<li><a href="">Next</a></li>
+				</ul>
+			</div>
+			<!-- <div class="col-sm-1 sidenav">
+	                <div class="well">
+	                    <p>ADS</p>
+	                </div>
+	                <div class="well">
+	                    <p>ADS</p>
+	                </div>
+	            </div> -->
+		</div>
+	</div>
+	<footer class="container-fluid text-center" style="display: none">
+		<p>@Copyright - Nhóm 2</p>
+	</footer>
+
+
+
+	<script>
+		function myFunction() {
+			if($(".dapan").css("color") != "rgb(255, 0, 0)") {
+				$(".dapan").css("color", "rgb(255, 0, 0)");
+			}else {
+				$(".dapan").css("color", "rgb(51, 51, 51)");
+			}
+		}
+	</script>
+
+</body>
+
+</html>

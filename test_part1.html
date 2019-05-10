@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Lean English</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ'
+	 crossorigin='anonymous'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<style>
+		/* Remove the navbar's default margin-bottom and rounded borders */
+		.navbar {
+			margin-bottom: 0;
+			border-radius: 0;
+		}
+
+
+		/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+		.row.content {
+			height: 570px
+		}
+
+		/* Set gray background color and 100% height */
+		.sidenav {
+			padding-top: 20px;
+			background-color: #f1f1f1;
+			height: 100%;
+		}
+
+		.text {
+			font-size: 25px;
+			color: black;
+		}
+
+		.da {
+			margin-left: 0;
+		}
+
+		/* Set black background color, white text and some padding */
+		footer {
+			background-color: #555;
+			color: white;
+			padding: 15px;
+		}
+
+		/* On small screens, set height to 'auto' for sidenav and grid */
+		@media screen and (max-width: 767px) {
+			.sidenav {
+				height: auto;
+				padding: 15px;
+			}
+			.row.content {
+				height: auto;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Home</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li><a href="./index.html">Vocabulary</a></li>
+					<li> <a href="./gramar.html">Gramar</a></li>
+					<li class="active"><a href="./test_toeic.html">Test Toeic</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="container-fluid">
+		<div style="height: 50px;"></div>
+		<div class="row content">
+			<!-- <div class="col-sm-1 sidenav">
+	                <p><a href="#">Link</a></p>
+	                <p><a href="#">Link</a></p>
+	                <p><a href="#">Link</a></p>
+	            </div> -->
+			<div class="col-sm-12">
+
+				<div class="row vocabulary">
+					<div class="panel panel-primary" style="width: 80%; margin: auto; margin-top: 20px">
+						<div class="panel-heading" align="center"> <label style="font-size: 25px;">PART I - Listening: Nghe và chọn</label></div>
+						<div class="panel-body">
+							<div class="row">
+								<!-- <p class="text" style="margin-left: 15px">Câu 1/100</p> -->
+
+								<audio controls style="float: right;margin-top: -50px;">
+									<source src="./MP3/autual1/01-Test1.mp3" type="audio/mpeg">
+								</audio>
+								<div class="col-xs-6">
+									<!-- <img src="./image/congnghe.jpg" class="img-responsive " alt="Image"> -->
+								</div>
+								<div class="col-xs-6">
+									<div id="show1" style="display: block;">
+										<div class="row da">
+											<p class="dapan">1 A. The woman is talking on the phone.</p>
+											<p>B. The woman is using her cell phone.</p>
+											<p>C. The woman is typing on the laptop.</p>
+											<p>D. The woman is wringting in her notebook.</p>
+										</div>
+										<div class="row da">
+											<p class="dapan">2 A. The woman is cooking some bacon.</p>
+											<p>B.	The woman is baking a cake..</p>
+											<p>C.	The woman is preparing for dinner.</p>
+											<p>D.   The woman is frying some fish.</p>
+										</div>
+
+										<div class="row da">
+											<p class="dapan">3 A.   The man is holding some seafood.</p>
+											<p>B.	The woman is baking a crab.</p>
+											<p>C.	They are scared of the crab.</p>
+											<p>D.   The family is shopping for breakfast.</p>
+										</div>
+
+										<div class="row da">
+											<p>4 A.   The man is using a screwdriver to screw a nail into the building trame.</p>
+											<p class="dapan">B.    The man is hammering something into a building frame.</p>
+											<p>C.	The man is making the frame with his hand.</p>
+											<p>D.   The man is wearing protectives glasses.</p>
+										</div>
+										<div class="row da">
+											<p class="dapan">5 A. There are some tables and chairs outdoors.</p>
+											<p>B. There are some people sitting at the table.</p>
+											<p>C. There are plastis umbrellas on the tables.</p>
+											<p>D. There are many flowers in the garden.</p>
+
+											<div class="row da">
+												<p>6 A.  	They are looking at each other.</p>
+												<p>B.  	They woman is typing on her computer.</p>
+												<p>C.  	The man is using the calculator.</p>
+												<p class="dapan">D.  The man is writing something onto the notepab.</p>
+											</div>
+											<div class="row da">
+												<p>7. Where was the company picnic help ?</p>
+												<p>A.  	In April</p>
+												<p>B.  	Refreshments will be provided.</p>
+												<p class="dapan">C.  	At a park next to a lake.</p>
+											</div>
+	
+											<div class="row da">
+												<p>8. Who’s working ar the front desk today ?</p>
+												<p>A.  	That’s a difficult request.</p>
+												<p class="dapan">B.  	It’s Katie Miller.</p>
+												<p>C.  	Make room on your desk.</p>
+											</div>
+	
+											<div class="row da">
+												<p class="dapan">9. Would you like  to work together or separately ?</p>
+												<p>A.  	Actually, i prefer working alone.</p>
+												<p>B.  	Let’s gather the company’s data.</p>
+												<p>C.  	Before next Friday.</p>
+											</div>
+											<div class="row da">
+												<p>10. Have you introduced yourself to the new employee ?</p>
+												<p>A.  	A new reward system will be introduced soon.</p>
+												<p class="dapan">B.  	No, i’ve been too busy today.</p>
+												<p>C.  	Nice to meet you.</p>
+										</div>
+									</div>
+									<!-- <div id="show2" style="display: none;">
+										<div class="row da">
+
+											<div class="col-xs-1">
+												<label class="radio-inline">
+													<input type="radio" name="optradio">A
+												</label>
+											</div>
+											<div class="col-xs-11">
+												Đáp án a
+											</div>
+
+										</div>
+										<div class="row da">
+
+											<div class="col-xs-1">
+												<label class="radio-inline">
+													<input type="radio" name="optradio">B
+												</label>
+											</div>
+											<div class="col-xs-11">
+												Đáp án b
+											</div>
+
+										</div>
+										<div class="row da">
+
+											<div class="col-xs-1">
+												<label class="radio-inline">
+													<input type="radio" name="optradio">C
+												</label>
+											</div>
+											<div class="col-xs-11">
+												Đáp án c
+											</div>
+
+										</div>
+										<div class="row da">
+
+											<div class="col-xs-1">
+												<label class="radio-inline">
+													<input type="radio" name="optradio">D
+												</label>
+											</div>
+											<div class="col-xs-11" style="color: red">
+												Đáp án d (đúng)
+											</div>
+
+										</div>
+									</div> -->
+
+									<br>
+									<button style="margin-left: 40%;" type="button" onclick="myFunction()" class="btn btn-success">Đáp Án</button>
+
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+				<ul class="pager">
+					<li><a href="">Previous</a></li>
+					<li><a href="./test_part1_1.html">Next</a></li>
+				</ul>
+			</div>
+			<!-- <div class="col-sm-1 sidenav">
+	                <div class="well">
+	                    <p>ADS</p>
+	                </div>
+	                <div class="well">
+	                    <p>ADS</p>
+	                </div>
+	            </div> -->
+		</div>
+	</div>
+	<footer class="container-fluid text-center" style="display: none">
+		<p>@Copyright - Nhóm 2</p>
+	</footer>
+
+
+
+	<script>
+		function myFunction() {
+			if($(".dapan").css("color") != "rgb(255, 0, 0)") {
+				$(".dapan").css("color", "rgb(255, 0, 0)");
+			}else {
+				$(".dapan").css("color", "rgb(51, 51, 51)");
+			}
+		}
+
+
+	</script>
+
+</body>
+
+</html>

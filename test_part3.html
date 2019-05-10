@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Lean English</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+        /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+	
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 570px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    .text{
+    	font-size: 25px;
+    	color: black;
+    }
+    .da{
+    	height: 30px;
+    	margin-left: 20px;
+    }
+    .ht{
+		margin-left: 120px;
+		color: black;
+		font-weight:bold;
+		font-size: 20px;
+    }
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
+</head>
+
+	<body>
+	    <nav class="navbar navbar-inverse navbar-fixed-top">
+	        <div class="container-fluid">
+	            <div class="navbar-header">
+	                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                </button>
+	                <a class="navbar-brand" href="#">Home</a>
+	            </div>
+	            <div class="collapse navbar-collapse" id="myNavbar">
+	                <ul class="nav navbar-nav">
+	                    <li ><a href="./index.html">Vocabulary</a></li>
+	                    <li > <a href="./gramar.html">Gramar</a></li>
+	                    <li class="active"><a href="./test_toeic.html">Test Toeic</a></li>
+	                </ul>
+	                <ul class="nav navbar-nav navbar-right">
+	                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+	                </ul>
+	            </div>
+	        </div>
+	    </nav>
+	    <div class="container-fluid">
+	    	<div style="height: 50px;"></div>
+	        <div class="row content">
+	            <!-- <div class="col-sm-1 sidenav">
+	                <p><a href="#">Link</a></p>
+	                <p><a href="#">Link</a></p>
+	                <p><a href="#">Link</a></p>
+	            </div> -->
+	            <div class="col-sm-12">
+	            
+					<div class="row vocabulary">
+						<div class="panel panel-primary" style="width: 80%; margin: auto; margin-top: 20px">
+		                  <div class="panel-heading" align="center"> <label style="font-size: 25px;">PART III - Listening: Đoạn hội thoại</label></div>
+		                  <div class="panel-body">
+		                    <div class="row"> 
+		                      	<p class="text" style="margin-left: 15px">Câu 1/100</p>
+		                     	<audio controls style="float: right;margin-top: -50px;">
+								  <source src="./MP3/part3.mp3" type="audio/mpeg">
+								</audio>
+ 
+		                     		<div id="dht" style="display: none;">
+			                       		<div class="row ht">
+		                       				<p>- Hello Hung. What time go play soccer?</p>
+									    </div>
+									    <div class="row ht">
+		                       				<p>- 2PM. What you want me drive ?</p>
+									    </div>
+									    <div class="row ht">
+		                       				<p>- Yes.</p>
+									    </div>
+									    <div class="row ht">
+		                       				<p>- OK. Bye. See you again.</p>
+									    </div>
+									    <hr>
+			                       	</div>
+
+		                    		<label style=" font-size: 20px; margin-left: 120px"> What is your name ?</label>
+			                       	<div id="show1" style="display: block;">
+			                       		<form action="">
+				                       		<div class="row da">
+			                       				<div class="col-xs-2 text-right">
+			                       					<label class="radio-inline">
+												      <input type="radio" name="optradio" >A
+												    </label>
+			                       				</div>
+			                       				<div class="col-xs-10">
+				                       				i like music
+			                       				</div>
+										    </div>
+										    <div class="row da">
+			                       				<div class="col-xs-2 text-right">
+			                       					<label class="radio-inline">
+												      <input type="radio" name="optradio" >B
+												    </label>
+			                       				</div>
+			                       				<div class="col-xs-10">
+			                       					My name is Hung
+			                       				</div>
+										    </div>
+										    <div class="row da">
+			                       				<div class="col-xs-2 text-right">
+			                       					<label class="radio-inline">
+												      <input type="radio" name="optradio" >C 
+												    </label>
+			                       				</div>
+			                       				<div class="col-xs-10">
+			                       					i go to fishing
+			                       				</div>
+										    </div>
+										    <div class="row da">
+			                       				<div class="col-xs-2 text-right">
+			                       					<label class="radio-inline">
+												      <input type="radio" name="optradio" >D
+												    </label>
+			                       				</div>
+			                       				<div class="col-xs-10" >
+			                       					i love you so much
+			                       				</div>
+										    </div>
+			                       		</form>
+			                       	</div>
+
+			                       	<div id="show2" style="display: none;">
+			                       		<div class="row da">
+		                       				<div class="col-xs-2 text-right">
+		                       					<label class="radio-inline">
+											      <input type="radio" name="optradio" >A
+											    </label>
+		                       				</div>
+		                       				<div class="col-xs-10">
+			                       				i like music
+		                       				</div>
+									    </div>
+									    <div class="row da">
+		                       				<div class="col-xs-2 text-right">
+		                       					<label class="radio-inline">
+											      <input type="radio" name="optradio" >B
+											    </label>
+		                       				</div>
+		                       				<div class="col-xs-10" style="color: red">
+		                       					My name is Hung
+		                       				</div>
+									    </div>
+									    <div class="row da">
+		                       				<div class="col-xs-2 text-right">
+		                       					<label class="radio-inline">
+											      <input type="radio" name="optradio" >C 
+											    </label>
+		                       				</div>
+		                       				<div class="col-xs-10">
+		                       					i go to fishing
+		                       				</div>
+									    </div>
+									    <div class="row da">
+		                       				<div class="col-xs-2 text-right">
+		                       					<label class="radio-inline">
+											      <input type="radio" name="optradio" >D
+											    </label>
+		                       				</div>
+		                       				<div class="col-xs-10" >
+		                       					i love you so much
+		                       				</div>
+									    </div>
+			                       	</div>
+			                       	<hr>
+
+			                       	<label style=" font-size: 20px; margin-left: 120px"> Where will they go ?</label>
+			                       	<div id="show3" style="display: block;">
+			                       		<form action="">
+				                       		<div class="row da">
+			                       				<div class="col-xs-2 text-right">
+			                       					<label class="radio-inline">
+												      <input type="radio" name="optradio" >A
+												    </label>
+			                       				</div>
+			                       				<div class="col-xs-10">
+				                       				go to shopping
+			                       				</div>
+										    </div>
+										    <div class="row da">
+			                       				<div class="col-xs-2 text-right">
+			                       					<label class="radio-inline">
+												      <input type="radio" name="optradio" >B
+												    </label>
+			                       				</div>
+			                       				<div class="col-xs-10">
+			                       					go to bed
+			                       				</div>
+										    </div>
+										    <div class="row da">
+			                       				<div class="col-xs-2 text-right">
+			                       					<label class="radio-inline">
+												      <input type="radio" name="optradio" >C 
+												    </label>
+			                       				</div>
+			                       				<div class="col-xs-10">
+			                       					go to school
+			                       				</div>
+										    </div>
+										    <div class="row da">
+			                       				<div class="col-xs-2 text-right">
+			                       					<label class="radio-inline">
+												      <input type="radio" name="optradio" >D
+												    </label>
+			                       				</div>
+			                       				<div class="col-xs-10" >
+			                       					go to play soccer
+			                       				</div>
+										    </div>
+			                       		</form>
+			                       	</div>
+
+			                       	<div id="show4" style="display: none;">
+			                       		<div class="row da">
+		                       				<div class="col-xs-2 text-right">
+		                       					<label class="radio-inline">
+											      <input type="radio" name="optradio" >A
+											    </label>
+		                       				</div>
+		                       				<div class="col-xs-10">
+			                       				go to shopping
+		                       				</div>
+									    </div>
+									    <div class="row da">
+		                       				<div class="col-xs-2 text-right">
+		                       					<label class="radio-inline">
+											      <input type="radio" name="optradio" >B
+											    </label>
+		                       				</div>
+		                       				<div class="col-xs-10" >
+		                       					go to bed
+		                       				</div>
+									    </div>
+									    <div class="row da">
+		                       				<div class="col-xs-2 text-right">
+		                       					<label class="radio-inline">
+											      <input type="radio" name="optradio" >C 
+											    </label>
+		                       				</div>
+		                       				<div class="col-xs-10">
+		                       					go to school
+		                       				</div>
+									    </div>
+									    <div class="row da">
+		                       				<div class="col-xs-2 text-right">
+		                       					<label class="radio-inline">
+											      <input type="radio" name="optradio" >D
+											    </label>
+		                       				</div>
+		                       				<div class="col-xs-10" style="color: red" >
+		                       					go to paly soccer
+		                       				</div>
+									    </div>
+			                       	</div>
+			                       	<hr>
+
+			                       	<label style=" font-size: 20px; margin-left: 120px"> What is your name ?</label>
+			                       	<div id="show5" style="display: block;">
+			                       		<form action="">
+				                       		<div class="row da">
+			                       				<div class="col-xs-2 text-right">
+			                       					<label class="radio-inline">
+												      <input type="radio" name="optradio" >A
+												    </label>
+			                       				</div>
+			                       				<div class="col-xs-10">
+				                       				i like music
+			                       				</div>
+										    </div>
+										    <div class="row da">
+			                       				<div class="col-xs-2 text-right">
+			                       					<label class="radio-inline">
+												      <input type="radio" name="optradio" >B
+												    </label>
+			                       				</div>
+			                       				<div class="col-xs-10">
+			                       					My name is Hung
+			                       				</div>
+										    </div>
+										    <div class="row da">
+			                       				<div class="col-xs-2 text-right">
+			                       					<label class="radio-inline">
+												      <input type="radio" name="optradio" >C 
+												    </label>
+			                       				</div>
+			                       				<div class="col-xs-10">
+			                       					i go to fishing
+			                       				</div>
+										    </div>
+										    <div class="row da">
+			                       				<div class="col-xs-2 text-right">
+			                       					<label class="radio-inline">
+												      <input type="radio" name="optradio" >D
+												    </label>
+			                       				</div>
+			                       				<div class="col-xs-10" >
+			                       					i love you so much
+			                       				</div>
+										    </div>
+			                       		</form>
+			                       	</div>
+
+			                       	<div id="show6" style="display: none;">
+			                       		<div class="row da">
+		                       				<div class="col-xs-2 text-right">
+		                       					<label class="radio-inline">
+											      <input type="radio" name="optradio" >A
+											    </label>
+		                       				</div>
+		                       				<div class="col-xs-10">
+			                       				i like music
+		                       				</div>
+									    </div>
+									    <div class="row da">
+		                       				<div class="col-xs-2 text-right">
+		                       					<label class="radio-inline">
+											      <input type="radio" name="optradio" >B
+											    </label>
+		                       				</div>
+		                       				<div class="col-xs-10" style="color: red">
+		                       					My name is Hung
+		                       				</div>
+									    </div>
+									    <div class="row da">
+		                       				<div class="col-xs-2 text-right">
+		                       					<label class="radio-inline">
+											      <input type="radio" name="optradio" >C 
+											    </label>
+		                       				</div>
+		                       				<div class="col-xs-10">
+		                       					i go to fishing
+		                       				</div>
+									    </div>
+									    <div class="row da">
+		                       				<div class="col-xs-2 text-right">
+		                       					<label class="radio-inline">
+											      <input type="radio" name="optradio" >D
+											    </label>
+		                       				</div>
+		                       				<div class="col-xs-10" >
+		                       					i love you so much
+		                       				</div>
+									    </div>
+			                       	</div>
+			                       	<hr>
+
+	                              	<div align="center" >
+	                              		<button style="" type="button" onclick="myFunction()" class="btn btn-success">Đáp Án</button>
+	                              		<button style="" type="button" onclick="myFunction2()" class="btn btn-info">Transcipt</button>
+	                              	</div>
+	                                
+		                    </div>
+		                    
+		                  </div>
+
+		                </div>
+					</div>
+					<ul class="pager">
+					    <li><a href="">Previous</a></li>
+					    <li><a href="./test_part3_page_n.html">Next</a></li>
+					</ul>
+	            </div>
+	            <!-- <div class="col-sm-1 sidenav">
+	                <div class="well">
+	                    <p>ADS</p>
+	                </div>
+	                <div class="well">
+	                    <p>ADS</p>
+	                </div>
+	            </div> -->
+	        </div>
+	    </div>
+	    <footer class="container-fluid text-center">
+	        <p>@Copyright - Nhóm 2</p>
+	    </footer>
+
+
+
+	    <script>
+			function myFunction() {
+			  var x1 = document.getElementById("show1");
+			  if (x1.style.display === "none") {
+			    x1.style.display = "block";
+			  } else {
+			    x1.style.display = "none";
+			  }
+			  var x2 = document.getElementById("show2");
+			  if (x2.style.display === "block") {
+			    x2.style.display = "none";
+			  } else {
+			    x2.style.display = "block";
+			  }
+			 
+			  var x3 = document.getElementById("show3");
+			  if (x3.style.display === "none") {
+			    x3.style.display = "block";
+			  } else {
+			    x3.style.display = "none";
+			  }
+			  var x4 = document.getElementById("show4");
+			  if (x4.style.display === "block") {
+			    x4.style.display = "none";
+			  } else {
+			    x4.style.display = "block";
+			  }
+
+			   var x5 = document.getElementById("show5");
+			  if (x5.style.display === "none") {
+			    x5.style.display = "block";
+			  } else {
+			    x5.style.display = "none";
+			  }
+
+			  var x6 = document.getElementById("show6");
+			  if (x6.style.display === "block") {
+			    x6.style.display = "none";
+			  } else {
+			    x6.style.display = "block";
+			  }
+			}
+
+			function myFunction2() {
+			  var c = document.getElementById("dht");
+			  if (c.style.display === "none") {
+			    c.style.display = "block";
+			  } else {
+			    c.style.display = "none";
+			  }
+			}
+		</script>
+
+	</body>
+
+</html>

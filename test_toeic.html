@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Lean English</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+        /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+	
+	.test_toeic{
+		width: 100%;
+	}
+	.test_toeic ul{
+		overflow: hidden;
+		list-style-type: none;
+	}
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 570px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    .part{
+    	font-size: 25px;
+    	color: black;
+    	padding-left: 20px;
+    }
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
+</head>
+
+	<body>
+	    <nav class="navbar navbar-inverse navbar-fixed-top">
+	        <div class="container-fluid">
+	            <div class="navbar-header">
+	                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                </button>
+	                <a class="navbar-brand" href="#">Home</a>
+	            </div>
+	            <div class="collapse navbar-collapse" id="myNavbar">
+	                <ul class="nav navbar-nav">
+	                    <li ><a href="./index.html">Vocabulary</a></li>
+	                    <li > <a href="./gramar.html">Gramar</a></li>
+	                    <li class="active"><a href="./test_toeic.html">Test Toeic</a></li>
+	                </ul>
+	                <ul class="nav navbar-nav navbar-right">
+	                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+	                </ul>
+	            </div>
+	        </div>
+	    </nav>
+	    <div class="container-fluid">
+	    	<div style="height: 50px;"></div>
+	        <div class="row content">
+	            <!-- <div class="col-sm-1 sidenav">
+	                <p><a href="#">Link</a></p>
+	                <p><a href="#">Link</a></p>
+	                <p><a href="#">Link</a></p>
+	            </div> -->
+	            <div class="col-sm-12">
+					<div class="row vocabulary">
+						<div class="panel panel-primary" style="width: 80%; margin: auto; margin-top: 20px">
+		                  <div class="panel-heading" align="center"> <label style="font-size: 25px;">Test Toeic</label></div>
+		                  <div class="panel-body">
+		                    <div class="row test_toeic">
+		                       <ul>
+		                       		<li>
+		                       			<a href="./test_part1.html">
+		                       				<div class="row part" style="background-color: #208e55">
+		                       					<label for="">PART I - Test 1</label>
+		                       				</div>
+		                       			</a>
+		                       			<hr>
+		                       		</li>
+		                       		<li>
+		                       			<a href="./test_part2.html">
+		                       				<div class="row part" style="background-color: #b7702d" >
+		                       					<label for="">PART II - Listening: Hỏi đáp</label>
+		                       				</div>
+		                       			</a>
+		                       			<hr>
+		                       		</li>
+		                       		<li>
+		                       			<a href="./test_part3.html">
+		                       				<div class="row part" style="background-color:#21baba">
+		                       					<label for="">PART III - Listening: Đoạn hội thoại</label>
+		                       				</div>
+		                       			</a>
+		                       			<hr>
+		                       		</li>
+		                       		<li>
+		                       			<a href="./test_part4.html">
+		                       				<div class="row part" style="background-color:#911515">
+		                       					<label for="">PART IV - Listening: Bài nói chuyện ngắn (Độc thoại)</label>
+		                       				</div>
+		                       			</a>
+		                       			<hr>
+		                       		</li>
+		                       		<li>
+		                       			<a href="./test_part5.html">
+		                       				<div class="row part" style="background-color:#8e8e09">
+		                       					<label for="">PART V - Reading: Hoàn thành câu</label>
+		                       				</div>
+		                       			</a>
+		                       			<hr>
+		                       		</li>
+		                       		<li>
+		                       			<a href="./test_part6.html">
+		                       				<div class="row part" style="background-color:#7f3f00">
+		                       					<label for="">PART VI - Reading: Hoàn thành đoạn văn</label>
+		                       				</div>
+		                       			</a>
+		                       			<hr>
+		                       		</li>
+		                       		<li>
+		                       			<a href="./test_part7.html">
+		                       				<div class="row part" style="background-color:#594a4a">
+		                       					<label for="">PART VII - Reading: Đọc hiểu</label>
+		                       				</div>
+		                       			</a>
+		                       			<hr>
+		                       		</li>
+		                       		
+		                       </ul>
+		                    </div>
+		                    
+		                  </div>
+		                </div>
+					</div>
+
+	            </div>
+	            <!-- <div class="col-sm-1 sidenav">
+	                <div class="well">
+	                    <p>ADS</p>
+	                </div>
+	                <div class="well">
+	                    <p>ADS</p>
+	                </div>
+	            </div> -->
+	        </div>
+	    </div>
+	    <footer class="container-fluid text-center">
+	        <p>@Copyright - Nhóm 2</p>
+	    </footer>
+	</body>
+
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Lean English</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+        /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+	.list_vocabulary{
+		width: 100%;
+	}
+	.list_vocabulary ul{
+		text-align: center;
+		overflow: hidden;
+		list-style-type: none;
+	}
+	.list_vocabulary ul li{
+		float: left;
+	    width: 240px;
+	    margin-left: 20px;
+	    margin-top: 10px; 
+	}
+
+	.learn_vocabulary{
+		width: 100%;
+	}
+	.learn_vocabulary ul{
+		overflow: hidden;
+		list-style-type: none;
+	}
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 570px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+	}
+	
+@-webkit-keyframes my {
+	 0% { color: red; } 
+	 50% { color: #fff;  } 
+	 100% { color: red;  } 
+ }
+ @-moz-keyframes my { 
+	 0% { color: red;  } 
+	 50% { color: #fff;  }
+	 100% { color: red;  } 
+ }
+ @-o-keyframes my { 
+	 0% { color: red; } 
+	 50% { color: #fff; } 
+	 100% { color: red;  } 
+ }
+ @keyframes my { 
+	 0% { color: red;  } 
+	 50% { color: #fff;  }
+	 100% { color: red;  } 
+ } 
+
+
+ #label_listen {
+		color: red;
+		text-align: center;
+         font-size:24px;
+         font-weight:bold;
+	 -webkit-animation: my 1000ms infinite;
+	 -moz-animation: my 1000ms infinite; 
+	 -o-animation: my 1000ms infinite; 
+	 animation: my 1000ms infinite;
+}
+
+  </style>
+</head>
+
+	<body>
+	    <nav class="navbar navbar-inverse navbar-fixed-top">
+	        <div class="container-fluid">
+	            <div class="navbar-header">
+	                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                </button>
+	                <a class="navbar-brand" href="#">Home</a>
+	            </div>
+	            <div class="collapse navbar-collapse" id="myNavbar">
+	                <ul class="nav navbar-nav">
+	                    <li class="active"><a href="./index.html">Vocabulary</a></li>
+	                    <li><a href="./gramar.html">Gramar</a></li>
+	                    <li><a href="./test_toeic.html">Test Toeic</a></li>
+	                </ul>
+	                <ul class="nav navbar-nav navbar-right">
+	                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+	                </ul>
+	            </div>
+	        </div>
+	    </nav>
+	    <div class="container-fluid">
+	    	<div style="height: 50px;"></div>
+	        <div class="row content">
+	            <div class="col-sm-12">
+					<div class="row vocabulary">
+						<div class="panel panel-primary" style="width: 80%; margin: auto; margin-top: 20px">
+		                  <div class="panel-heading" align="center"> <label style="font-size: 25px;">Chủ đề: Công việc</label></div>
+		                  <div class="panel-body">
+                            <p id="label_listen">Cùng nghe 1 đoạn video để ôn lại từ vựng nhé !</p>
+                            <iframe style="display: none" width="420" height="345" src="./MP3/amthuc.mp4" id="fr_video">
+                            </iframe>
+                            
+		                  </div>
+		                </div>
+					</div>
+	            </div>
+	        </div>
+	    </div>
+	    <footer class="container-fluid text-center">
+	        <p>@Copyright - Nhóm 2</p>
+	    </footer>
+	</body>
+
+</html>
+
+<script>
+	$(document).ready(function() {
+		setTimeout(function() {
+			$("#fr_video").css({"display": "", "width": "100%"});
+			$("#label_listen").css("display","none");
+		}, 4000)
+	})
+</script>

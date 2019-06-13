@@ -13,7 +13,7 @@ $(document).ready(function() {
     vocabularyList.forEach((vocabulary, idx) => {
         $("#list_vocabulary").append(
             "<li>" +
-                "<div class='panel panel-primary'>" +
+                "<div class='panel panel-primary pr_vocabulary'>" +
 				    "<div class='panel-heading'> <label>Chủ đề:"+ vocabulary.topic +"</label></div>"+
 				        "<div class='panel-body'>"+
 				            "<div class='form-group'>"+

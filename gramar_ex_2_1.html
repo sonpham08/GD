@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Lean English</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ'
+	 crossorigin='anonymous'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<style>
+		/* Remove the navbar's default margin-bottom and rounded borders */
+		.navbar {
+			margin-bottom: 0;
+			border-radius: 0;
+		}
+
+		.list_vocabulary {
+			width: 100%;
+		}
+
+		.list_vocabulary ul {
+			text-align: center;
+			overflow: hidden;
+			list-style-type: none;
+		}
+
+		.list_vocabulary ul li {
+			float: left;
+			width: 240px;
+			margin-left: 20px;
+			margin-top: 10px;
+		}
+
+		.learn_vocabulary {
+			width: 100%;
+			padding-left: 100px;
+		}
+
+		/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+		.row.content {
+			height: 570px
+		}
+
+		/* Set gray background color and 100% height */
+		.sidenav {
+			padding-top: 20px;
+			background-color: #f1f1f1;
+			height: 100%;
+		}
+
+		/* Set black background color, white text and some padding */
+		footer {
+			background-color: #555;
+			color: white;
+			padding: 15px;
+		}
+
+		/* On small screens, set height to 'auto' for sidenav and grid */
+		@media screen and (max-width: 767px) {
+			.sidenav {
+				height: auto;
+				padding: 15px;
+			}
+			.row.content {
+				height: auto;
+			}
+		}
+
+		.red {
+			color: red;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+	
+		<div class="container-fluid">
+		
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+				<a class="navbar-brand" href="#">Home</a>
+				</div>
+		
+			<div class="collapse navbar-collapse" id="myNavbar">
+			
+				<ul class="nav navbar-nav">
+				
+					<li><a href="./index.html">Vocabulary</a></li>
+				
+					<li class="active"> <a href="./gramar.html">Gramar</a></li>
+				
+					<li><a href="./test_toeic.html">Test Toeic</a></li>
+				
+				</ul>
+			
+				<ul class="nav navbar-nav navbar-right">
+				
+					<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+				
+				</ul>
+			
+			</div>
+		
+		</div>
+	
+	</nav>
+
+	<div class="container-fluid">
+	
+		<div style="height: 50px;"></div>
+	
+		<div class="row content">
+		
+			<!-- <div class="col-sm-1 sidenav">
+     <p><a href="#">Link</a></p>
+     <p><a href="#">Link</a></p>
+     <p><a href="#">Link</a></p>
+     </div> -->
+		
+			<div class="col-sm-12">
+			
+				<div class="row vocabulary">
+				
+					<div class="panel panel-primary" style="width: 80%; margin: auto; margin-top: 20px">
+					
+						<div class="panel-heading" align="center"> <label style="font-size: 25px;">2. Noun phrase (Ngữ danh từ)</label></div>
+					
+						<div class="panel-body">
+						
+							<div class="row learn_vocabulary">
+								<label style="font-size: 20px">Bài tập 1: Sắp xếp các tính từ sau theo đúng trật tự</label>
+								<p> 1. a black and white(a) | broken(b) | old(c) TV</p>
+							
+								<p>2. a/an orange(a) | round(b) | plastic(c) | strange(d) toy</p>
+							
+								<p> 3. a cooking(a) | English(b) | thin(c) | old(d) book</p>
+							
+								<p>4. a/an Mexican(a) | incredible(b) | beautiful(c) dish</p>
+							
+								<p>5. a/an light(a) | unhappy(b) | online(c) | Japanese(d) novel</p>
+								<label style="font-size: 20px">Bài tập 2: Sắp xếp lại thứ
+									tự của các từ đã cho sau:</label>
+								<p>1. wedding/ dress/ she/ long/ wore/ white/ a. </p>
+								<input type="text" class="form_control" /><br>          <p>2. woman/ English/is/an/ young/ intelligent/
+									it. </p>
+								<input type="text" class="form_control" /><br>                              <p>3. is/
+									bag/ this/ sleeping/ black/ a/ new.</p>
+								<input type="text" class="form_control" /><br>                              <p>4. pink/
+									he/ house/ bought/ big/beautiful/ a. </p>
+								<input type="text" class="form_control" /><br>                              <p>5. gave/
+									wallet/ him/ she/ brown/ small/ leather/ a. </p>
+								<input type="text" class="form_control" /><br>                                                         
+								<label style="font-size: 20px">Bài tập 3: Chọn đáp án đúng</label>
+								<p style="color: red"> 1</p>
+							
+								<p>A. a pair of sport new French shoes</p>
+							
+								<p> B. a pair of new sport French shoes</p>
+							
+								<p>C. a pair of new French sport shoes</p>
+							
+								<p>D. a pair of French new sport shoes</p><br>                                                           <p style="color: red">
+								2</p>
+							
+								<p>A. a young tall beautiful lady</p>
+							
+								<p> B. a tall young beautiful lady</p>
+							
+								<p>C. a beautiful young tall lady</p>
+							
+								<p>D. a beautiful tall young lady</p>
+							
+								<p style="color: red"> 3</p>
+							
+								<p>A. an old wooden thick table</p>
+							
+								<p> B. a thick old wooden table</p>
+							
+								<p>C. a thick wooden old table</p>
+							
+								<p>D. a wooden thick old table</p>
+							
+								<p style="color: red"> 4</p>
+							
+								<p>A. a modern Vietnamese racing car</p>
+							
+								<p> B. a Vietnamese modern racing car</p>
+							
+								<p>C. a racing Vietnamese modern car</p>
+							
+								<p>D. a modern racing Vietnamese car</p>
+							
+								<p style="color: red"> 5</p>
+							
+								<p>A. a new interesting English book</p>
+							
+								<p>B. an English new interesting book</p>
+							
+								<p>C. an interesting English new book</p>
+							
+								<p>D. an interesting new English book.</p>
+							
+							</div>
+						
+							<div class="row dapan">
+								<label style="font-size: 20px">Bài tập 1: Sắp xếp các tính từ sau theo đúng trật
+									tự</label>
+								<p class="red"> 1. c – b – a</p>
+							
+								<p class="red">2. d – b – a – c</p>
+							
+								<p class="red"> 3. c – d – b – a</p>
+							
+								<p class="red">4. c – d – b – a</p>
+							
+								<p class="red">5. b – d – c – a</p><br>                                                           <label style="font-size: 20px">Bài
+									tập 2:</label>
+								<p class="red">1.She wore a long white wedding dress.</p>
+							
+								<p class="red">2.It is an intelligent young English woman.</p>
+							
+								<p class="red">3.This is a new black sleeping bag.</p>
+							
+								<p class="red">4.He bought a beautiful big pink house.</p>
+							
+								<p class="red">5.She gave him a small brown leather wallet.</p> <br>                                                           <label
+								 style="font-size: 20px">Bài tập 3: </label>
+								<p class="red"> 1.C</p>
+							
+								<p class="red">2. D</p>
+							
+								<p class="red"> 3. B</p>
+							
+								<p class="red">4. A</p>
+							
+								<p class="red">5. D</p><br>
+							</div>
+						
+						</div>
+					
+					</div>
+				
+				</div>
+
+			
+			</div>
+		
+		</div>
+	
+		<footer class="container-fluid text-center">
+		
+			<p>@Copyright - Nhóm 2</p>
+		
+		</footer>
+	
+</body>
+
+</html>

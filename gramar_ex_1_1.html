@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Lean English</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+        /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+	.list_vocabulary{
+		width: 100%;
+	}
+	.list_vocabulary ul{
+		text-align: center;
+		overflow: hidden;
+		list-style-type: none;
+	}
+	.list_vocabulary ul li{
+		float: left;
+	    width: 240px;
+	    margin-left: 20px;
+	    margin-top: 10px; 
+	}
+
+	.learn_vocabulary{
+		width: 100%;
+		padding-left: 100px;
+	}
+	
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 570px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+	}
+	
+	.fr_grammar {
+		border: 1px solid orange;
+		padding: 10px;
+		border-style: dashed;
+	}
+  </style>
+</head>
+
+	<body>
+	    <nav class="navbar navbar-inverse navbar-fixed-top">
+	        <div class="container-fluid">
+	            <div class="navbar-header">
+	                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                </button>
+	                <a class="navbar-brand" href="#">Home</a>
+	            </div>
+	            <div class="collapse navbar-collapse" id="myNavbar">
+	                <ul class="nav navbar-nav">
+	                    <li ><a href="./index.html">Vocabulary</a></li>
+	                    <li class="active"> <a href="./gramar.html">Gramar</a></li>
+	                    <li><a href="./test_toeic.html">Test Toeic</a></li>
+	                </ul>
+	                <ul class="nav navbar-nav navbar-right">
+	                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+	                </ul>
+	            </div>
+	        </div>
+	    </nav>
+	    <div class="container-fluid">
+	    	<div style="height: 50px;"></div>
+	        <div class="row content">
+	            <div class="col-sm-12">
+					<div class="row vocabulary">
+						<div class="panel panel-primary" style="width: 80%; margin: auto; margin-top: 20px">
+		                  <div class="panel-heading" align="center"> <label style="font-size: 25px;">1. Cấu trúc chung của 1 câu</label></div>
+		                  <div class="panel-body">
+		                    <div class="row learn_vocabulary">
+		                       <label style="color: red; margin-left: 200px">Viết lại câu theo gợi ý đã có sẵn:</label><br>
+		                       <label style="font-size: 20px">1. I’m sorry I missed your birthday party.</label>
+		                       <div>
+								=> Despite his <input type="text" class="form_control"/>
+								<p style="color: red; opacity: 0" class="show_answer">Despite his both broken legs, he managed to……………….</p>
+							   </div>
+
+							   <br>
+
+
+							   <label style="font-size: 20px">2. I haven’t eaten this kind of food before.</label>
+		                       <div>
+								=> This is the first <input type="text" class="form_control"/>
+								<p style="color: red; opacity: 0" class="show_answer">This is time I have eaten this kind of food.</p>
+							   </div>
+
+							   <br>
+
+							   <label style="font-size: 20px">3. The children couldn’t go swimming because the sea was rough.</label>
+		                       <div>
+								=> The sea was too <input type="text" class="form_control"/>
+								<p style="color: red; opacity: 0" class="show_answer">……..was too rough for the children to …………….</p>
+							   </div>
+							   <br>
+
+							   <label style="font-size: 20px">4. “Why don’t you put your luggage under the seat?” he asked.</label>
+		                       <div>
+								=> He suggested <input type="text" class="form_control"/>
+								<p style="color: red; opacity: 0" class="show_answer">…….that I (should) put my ……………</p>
+							   </div>
+							   <br>
+							
+
+							   <label style="font-size: 20px">5. I’m sorry I missed your birthday party.</label>
+		                       <div>
+								=> I wish <input type="text" class="form_control"/>
+								<p style="color: red; opacity: 0" class="show_answer">I wish I had gone to your birthday party./ I wish I hadn’t missed your birthday party.</p>
+							   </div>
+							   <br>
+
+
+							   <label style="font-size: 20px">6. That restaurant is so dirty that no one wants to eat there.</label>
+		                       <div>
+								=> It is such <input type="text" class="form_control"/>
+								<p style="color: red; opacity: 0" class="show_answer">…………..a dirty restaurant that no one wants to eat there.</p>
+							   </div>
+							   <br>
+
+
+							   <label style="font-size: 20px">7. I’m afraid I haven’t got time to listen to you.</label>
+		                       <div>
+								=> I wish <input type="text" class="form_control"/>
+								<p style="color: red; opacity: 0" class="show_answer">I wish I had (got) time to listen to you.</p>
+							   </div>
+							   <br>
+
+							   <label style="font-size: 20px">8. We spent 5 hours getting to London.</label>
+		                       <div>
+								=> It took <input type="text" class="form_control"/>
+								<p style="color: red; opacity: 0" class="show_answer">It took us 5 hours to get to London.</p>
+							   </div>
+							   <br>
+
+							   <label style="font-size: 20px">9. I get to work in 20 minutes.</label>
+		                       <div>
+								=> It <input type="text" class="form_control"/>
+								<p style="color: red; opacity: 0" class="show_answer">It takes me 20 minutes to get to work.</p>
+							   </div>
+							   <br>
+
+
+							   <label style="font-size: 20px">10. The furniture was so expensive that I didn’t buy it.</label>
+		                       <div>
+								=> The furniture was too <input type="text" class="form_control"/>
+								<p style="color: red; opacity: 0" class="show_answer">The furniture was too expensive for me to buy.</p>
+							   </div>
+							   <br>
+
+
+							   <label style="font-size: 20px">11. It was so late that nothing could be done.</label>
+		                       <div>
+								=> It was too <input type="text" class="form_control"/>
+								<p style="color: red; opacity: 0" class="show_answer">…late to do anything.</p>
+							   </div>
+							   <br>
+
+
+							   <label style="font-size: 20px">12. This flower is very beautiful!</label>
+		                       <div>
+								=> How <input type="text" class="form_control"/>
+								<p style="color: red; opacity: 0" class="show_answer">How beautiful this flower is!</p>
+							   </div>
+							   <br>
+
+
+							   <label style="font-size: 20px">13. The last time she had a swim was five years ago.</label>
+		                       <div>
+								=> She hasn’t <input type="text" class="form_control"/>
+								<p style="color: red; opacity: 0" class="show_answer">She hasn’t had a swim for 5 years.</p>
+							   </div>
+							   <br>
+
+
+							   <label style="font-size: 20px">14. Although his leg was broken he managed to get out of the car.</label>
+		                       <div>
+								=> In spite <input type="text" class="form_control"/>
+								<p style="color: red; opacity: 0" class="show_answer">…….of having a broken leg, he managed to get out of the car.</p>
+							   </div>
+							   <br>
+
+							   <label style="font-size: 20px">15. Why don’t asked her yourself?</label>
+		                       <div>
+								=> I suggest <input type="text" class="form_control"/>
+								<p style="color: red; opacity: 0" class="show_answer">…………..you ask her yourself.</p>
+							   </div>
+							   <br>
+
+							   
+							   <button type="button" class="btn btn-success" id="btn_answer">Kiểm tra đáp án</button>
+							   
+		                    </div>
+		                  </div>
+		                </div>
+					</div>
+<!-- 
+					<div class="row">
+						<div class="container" align="center">
+						  <ul class="pagination">
+						    <li class="active"><a href="./gramar_1_1.html">1</a></li>
+						    <li ><a href="./gramar_2_1.html">2</a></li>
+						    <li><a href="#">3</a></li>
+						   <li><a href="#">4</a></li>
+						   <li><a href="#">5</a></li>
+						   <li><a href="#">6</a></li>
+						   <li><a href="#">7</a></li>
+						   <li><a href="#">8</a></li>
+						  </ul>
+						</div>
+					</div> -->
+
+	              	
+	            </div>
+	            <!-- <div class="col-sm-1 sidenav">
+	                <div class="well">
+	                    <p>ADS</p>
+	                </div>
+	                <div class="well">
+	                    <p>ADS</p>
+	                </div>
+	            </div> -->
+	        </div>
+	    </div>
+	    <footer class="container-fluid text-center">
+	        <p>@Copyright - Nhóm 2</p>
+	    </footer>
+	</body>
+
+</html>
+
+<script>
+	$("#btn_answer").click(function() {
+		
+		if($(".show_answer").css("opacity") == "0") {
+			$(".show_answer").css("opacity", 1);
+		} else {
+			if($(".show_answer").css("opacity") == 1) {
+				$(".show_answer").css("opacity", 0);
+			}	
+		}
+	})
+</script>

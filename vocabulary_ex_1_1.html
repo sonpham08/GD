@@ -96,6 +96,13 @@
 	 -o-animation: my 1000ms infinite; 
 	 animation: my 1000ms infinite;
 }
+	.flex {
+		display: flex;
+	}
+
+	.red {
+		color: red;
+	}
 
   </style>
 </head>
@@ -131,10 +138,59 @@
 						<div class="panel panel-primary" style="width: 80%; margin: auto; margin-top: 20px">
 		                  <div class="panel-heading" align="center"> <label style="font-size: 25px;">Chủ đề: Công Nghệ</label></div>
 		                  <div class="panel-body">
-                            <p id="label_listen">Cùng nghe 1 đoạn video để ôn lại từ vựng nhé !</p>
-                            <iframe style="display: none" width="420" height="345" src="./MP3/technology.mp4" id="fr_video">
-                            </iframe>
-                            
+							<!-- <p id="label_listen">Cùng nghe 1 đoạn video để ôn lại từ vựng nhé !</p> -->
+							<div class="row">							
+								<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+									<iframe style="width: 100%" height="345" src="./MP3/technology.mp4" id="fr_video">
+									</iframe>
+								</div>		
+								<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+									<div class="choose_question">
+										<div class="flex">
+											<input type="radio" name="tech_1" value="tech_1"/>
+											<p class="tech_1" >Technology</p> 
+										</div>
+										<div class="flex">
+											<input type="radio" name="tech_2" value="tech_2"/>
+											<p>Memory</p>
+										</div>
+										<div class="flex">
+											<input type="radio"  name="tech_3" value="tech_3"/>
+											<p class="tech_1" >Microprocessor</p>
+										</div>
+										<div class="flex">
+											<input type="radio" name="tech_4" value="tech_4"/>
+											<p  >Operation</p>
+										</div>
+										<div class="flex">
+											<input type="radio" name="tech_5" value="tech_5"/>
+											<p >Storage</p>
+										</div>
+										<div class="flex">
+											<input type="radio" name="tech_6" value="tech_6"/>
+											<p class="tech_1" >Graphics</p>
+										</div>
+										<div class="flex">
+											<input type="radio" name="tech_7" value="tech_7"/>
+											<p >Hardware</p>
+										</div>
+										<div class="flex">
+											<input type="radio" name="tech_8" value="tech_8"/>
+											<p class="tech_1" >Protocol</p>
+										</div>
+										<div class="flex">
+											<input type="radio" name="tech_9" value="tech_9"/>
+											<p >Pinpoint</p>
+										</div>
+										
+									</div>
+									<div>
+										
+										<button type="button" class="btn btn-danger" id="btn_da">Xem đáp án</button>
+										
+									</div>
+								</div>
+							</div>
 		                  </div>
 		                </div>
 					</div>
@@ -149,10 +205,7 @@
 </html>
 
 <script>
-	$(document).ready(function() {
-		setTimeout(function() {
-			$("#fr_video").css({"display": "", "width": "100%"});
-			$("#label_listen").css("display","none");
-		}, 4000)
+	$("#btn_da").click(function() {
+		$(".tech_1").toggleClass("red");
 	})
 </script>
